@@ -14,7 +14,7 @@
 - name: Starting {{ component }} Server
   ansible.builtin.systemd_service:
     state: restarted
-    name: "{{ component }}"
+    name: mysqld
     enabled: true
 
 - name: Setup MySql Root Password
