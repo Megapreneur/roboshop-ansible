@@ -12,7 +12,6 @@
   args:
     chdir: /app
 
-
 - name: Load MySql Schema Setup
   ansible.builtin.import_tasks:
     file: mysql_schema_setup.yml
