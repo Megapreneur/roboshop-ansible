@@ -14,7 +14,7 @@
 
 
 - name: Load MySql Schema Setup
-  ansible.builtin.import_role:
+  ansible.builtin.import_tasks:
     file: mysql_schema_setup.yml
 
 - name: App Pre-requisites
