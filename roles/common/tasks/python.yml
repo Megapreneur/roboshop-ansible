@@ -13,6 +13,8 @@
 
 - name: Download Python Dependencies
   ansible.builtin.shell: pip3.6 install -r requirements.txt
+  args:
+    chdir: /app
 
 - name: App Pre-requisites
   ansible.builtin.import_tasks:
