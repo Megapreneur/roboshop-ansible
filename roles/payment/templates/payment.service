@@ -4,11 +4,11 @@ Description=Payment Service
 [Service]
 User=root
 WorkingDirectory=/app
-Environment=CART_HOST=cart-dev.lanim.shop
+Environment=CART_HOST=cart-{{ env }}.lanim.shop
 Environment=CART_PORT=8080
-Environment=USER_HOST=user-dev.lanim.shop
+Environment=USER_HOST=user-{{ env }}.lanim.shop
 Environment=USER_PORT=8080
-Environment=AMQP_HOST=rabbitmq-dev.lanim.shop
+Environment=AMQP_HOST=rabbitmq-{{ env }}.lanim.shop
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=roboshop123
 
